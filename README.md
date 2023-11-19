@@ -7,6 +7,18 @@ Este README contém os comandos SQL necessários para inserir uma paleta de core
 1. Certifique-se de que possui um banco de dados criado e configurado corretamente.
 2. Execute os comandos SQL a seguir para inserir a paleta de cores no banco de dados.
 
+## Criação da tabela
+
+```sql
+create table cor (
+id serial not null,
+descricao varchar(50) not null,
+hexadecimal varchar(7) not null,
+data_cadastro timestamp not null,
+constraint pk_cor primary key(id)
+);
+```
+
 ## Comandos SQL para inserção da paleta de cores
 
 ```sql
